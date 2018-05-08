@@ -87,7 +87,7 @@ Example:
 
 We have a file named aging-10-01.zip for Aging Journal, volume 10 and issue 1. We need to place it on the server on the 30'th of January 2018.
 
-In this case, full path to the file will be:
+In this case, full path to the file will be: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
 
 
@@ -111,10 +111,10 @@ Issue package files should be named in accordance with PMC guidelines.
 
 Use the following naming scheme: jour-vol-issue.zip
 
-- *jour* is an alphanumeric identifier such as a journal abbreviation.
+- **jour** is an alphanumeric identifier such as a journal abbreviation.
 
   +-----------------------------+--------------+ 
-  | *Journal*                   | *jour*       | 
+  | Journal                     |  jour        | 
   +=============================+==============+ 
   | Aging                       | aging        | 
   +-----------------------------+--------------+ 
@@ -126,8 +126,8 @@ Use the following naming scheme: jour-vol-issue.zip
   +-----------------------------+--------------+ 
 
 
-- *vol* is journal volume
-- *issue* identifies a specific journal issue
+- **vol** is journal volume
+- **issue** identifies a specific journal issue
 
 | For example:
 |
@@ -145,7 +145,7 @@ Package files target location
 
 .. IMPORTANT::
     
-    Package files target location here *DIFFERS* from "Initial package upload" scenario.
+    Package files target location here **DIFFERS** from "Initial package upload" scenario.
 
 
 Issue package file should be uploaded to corresponding SFTP folder.
@@ -153,21 +153,28 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date]
-OR
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date] |br|
+OR |br|
 /mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date-iteration]
 
-- *Journal* - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
-- *v#* stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
-- *aging-vol-issue* is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
-- *storage-date* is the date when file was uploaded to the server
-OR
-- storage-date-iteration is used when corrections are uploaded same date as initial package. In this case add "iteration" number to the date 
+- **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
+
+- **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
+
+- **aging-vol-issue** is "aging" word followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
+
+- **storage-date** is the date when file was uploaded to the server |br|
+OR |br|
+- **storage-date-iteration** is used when corrections are uploaded same date as initial package. In this case add "iteration" number to the date 
 
 Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]
+
 - YYYY is full year (e.g. 2018, 2019 etc)
+
 - MM is two-digit month (e.g. 01, 05, 10, 12 etc)
+
 - DD is two-digit day (e.g. 01, 20, 25, 31 etc)
+
 - iteration number is one digit number (i.e. 1, 2, 3 etc)
 
 
@@ -176,25 +183,25 @@ Example 1 (different upload dates):
 
 We have corrected package file named aging-10-01.zip for Aging Journal volume 10 and issue 1. We need to place it on the server on the 3'd of February, 2018. At the same time initial upload has been done on the 30'th of January, 2018.
 
-In this case, full path to the file will be:
+In this case, full path to the file will be: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.zip
 
-As a result we will have 2 files on the server - initial and corrected:
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
+As a result we will have 2 files on the server - initial and corrected: |br|
+/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.zip
 
-
+|br|
 
 Example 2 (same upload date):
 
 We have corrected package file named aging-10-01.zip for Aging Journal volume 10 and issue 1. We need to place it ont the server on the same date when initial upload has been done - 30'th of January, 2018.
 
-In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there:
+In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
 
 
-As a result we will have 2 files on the server - initial and corrected:
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
+As a result we will have 2 files on the server - initial and corrected: |br| 
+/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
 
 
@@ -220,10 +227,10 @@ Issue package files should be named in accordance with PMC guidelines.
 
 Use the following naming scheme: jour-vol-issue.r#.zip
 
-- *jour* is an alphanumeric identifier such as a journal abbreviation.
+- **jour** is an alphanumeric identifier such as a journal abbreviation.
 
   +-----------------------------+--------------+ 
-  | *Journal*                   | *jour*       | 
+  | Journal                     |  jour        | 
   +=============================+==============+ 
   | Aging                       | aging        | 
   +-----------------------------+--------------+ 
@@ -235,14 +242,14 @@ Use the following naming scheme: jour-vol-issue.r#.zip
   +-----------------------------+--------------+ 
 
 
-- *vol* is journal volume
-- *issue* identifies a specific journal issue
-- *r#* is a revision number (e.g. r1, r2, r3)
+- **vol** is journal volume
+- **issue** identifies a specific journal issue
+- **r#** is a revision number (e.g. r1, r2, r3)
 
 
 For example:
 
--You send the original files for "Aging" volume 10, issue 1 in a zip file named:  *aging-15-01.zip*
+- You send the original files for "Aging" volume 10, issue 1 in a zip file named:  *aging-15-01.zip*
 
 - Three days later, you send a revised XML file for one article, in a zip file named: *aging-15-01.r1.zip*
 
@@ -267,21 +274,28 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date]
-OR
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date] |br|
+OR |br|
 /mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date-iteration]
 
-- *Journal* - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
-- *v#* stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
-- *aging-vol-issue* is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
-- *storage-date* is the date when file was uploaded to the server
-OR
-- storage-date-iteration is used when corrections are uploaded same date as initial package. In this case add "iteration" number to the date 
+- **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
+
+- **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
+
+- **aging-vol-issue** is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
+
+- **storage-date** is the date when file was uploaded to the server |br|
+OR |br|
+- **storage-date-iteration** is used when corrections are uploaded same date as initial package. In this case add "iteration" number to the date 
 
 Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]
+
 - YYYY is full year (e.g. 2018, 2019 etc)
+
 - MM is two-digit month (e.g. 01, 05, 10, 12 etc)
+
 - DD is two-digit day (e.g. 01, 20, 25, 31 etc)
+
 - iteration number is one digit number (i.e. 1, 2, 3 etc)
 
 
@@ -290,11 +304,11 @@ Example 1 (different upload dates):
 
 We have a revision file named aging-10-01.r1.zip for Aging Journal volume 10 and issue 1. We need to place it on the server on the 3'd of February, 2018. At the same time initial upload has been done on the 30'th of January, 2018.
 
-In this case, full path to the file will be:
+In this case, full path to the file will be: |br| 
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.zip
 
-As a result we will have 2 files on the server - initial and corrected:
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
+As a result we will have 2 files on the server - initial and corrected: |br|
+/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.r1.zip
 
 
@@ -303,11 +317,16 @@ Example 2 (same upload date):
 
 We have a revision file named aging-10-01.r1.zip for Aging Journal volume 10 and issue 1. We need to place it on the server on the same date when initial upload has been done - 30'th of January, 2018.
 
-In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there:
+In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
 
 
-As a result we will have 2 files on the server - initial and corrected:
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
+As a result we will have 2 files on the server - initial and corrected: |br| 
+/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.r1.zip
 
+
+
+.. |br| raw:: html
+
+   <br />

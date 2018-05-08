@@ -64,13 +64,13 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date]
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
 
 - **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
 
-- **aging-vol-issue** is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
+- **jour-vol-issue** is Journal name (see table above) followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
 
 - **storage-date** is the date when file was uploaded to the server. 
 
@@ -153,15 +153,15 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date] |br|
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
 OR |br|
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date-iteration]
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
 
 - **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
 
-- **aging-vol-issue** is "aging" word followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
+- **jour-vol-issue** is Journal name (see table above) followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
 
 - **storage-date** is the date when file was uploaded to the server |br|
 OR |br|
@@ -274,15 +274,15 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date] |br|
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
 OR |br|
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date-iteration]
+/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
 
 - **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
 
-- **aging-vol-issue** is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
+- **jour-vol-issue** is Journal name (see table above) followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
 
 - **storage-date** is the date when file was uploaded to the server |br|
 OR |br|

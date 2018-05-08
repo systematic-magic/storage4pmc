@@ -27,10 +27,10 @@ Issue package files should be named in accordance with PMC guidelines.
 
 Use the following naming scheme: jour-vol-issue.zip
 
-- *jour* is an alphanumeric identifier such as a journal abbreviation.
+- **jour** is an alphanumeric identifier such as a journal abbreviation.
 
   +-----------------------------+--------------+ 
-  | *Journal*                   | *jour*       | 
+  | Journal                     |  jour        | 
   +=============================+==============+ 
   | Aging                       | aging        | 
   +-----------------------------+--------------+ 
@@ -42,8 +42,8 @@ Use the following naming scheme: jour-vol-issue.zip
   +-----------------------------+--------------+ 
 
 
-- *vol* is journal volume
-- *issue* identifies a specific journal issue
+- **vol** is journal volume
+- **issue** identifies a specific journal issue
 
 | For example:
 |
@@ -66,14 +66,20 @@ Use the following location to store issue packages:
 
 /mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[aging-vol-issue]/[storage-date]
 
-- *Journal* - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
-- *v#* stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
-- *aging-vol-issue* is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
-- *storage-date* is the date when file was uploaded to the server. 
+- **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
+
+- **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
+
+- **aging-vol-issue** is "aging" word followed by volume and issue numbers (e.g. aging-10-1, aging-5-6, aging-9-2 etc)
+
+- **storage-date** is the date when file was uploaded to the server. 
 
 Use the following naming convention for storge date: YYYYMMDD
+
 - YYYY is full year (e.g. 2018, 2019 etc)
+
 - MM is two-digit month (e.g. 01, 05, 10, 12 etc)
+
 - DD is two-digit day (e.g. 01, 20, 25, 31 etc)
 
 

@@ -303,7 +303,7 @@ OR
 
 - **storage-date-iteration** is the date when file was uploaded to the server. It is used when corrections are uploaded same date as initial package. In this case **iteration** number should be added to the date.
 
-Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]
+Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration]
 
 - YYYY is full year (e.g. 2018, 2019 etc)
 
@@ -311,7 +311,7 @@ Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[itera
 
 - DD is two-digit day (e.g. 01, 20, 25, 31 etc)
 
-- iteration number is one digit number (i.e. 1, 2, 3 etc)
+- iteration is one digit number (i.e. 1, 2, 3 etc)
 
 
 

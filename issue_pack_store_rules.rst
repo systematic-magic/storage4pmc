@@ -120,9 +120,11 @@ Naming of issue pakage file
 
 Issue package files should be named in accordance with PMC guidelines.
 
-Use the following naming scheme: jour-vol-issue.zip
+Use the following naming scheme: **jour-vol-issue.zip**
 
-- **jour** is an alphanumeric identifier such as a journal abbreviation.
+- **jour** is an alphanumeric identifier for a journal. See all possible combinations below:
+
+.. _jour2:
 
   +-----------------------------+--------------+ 
   | Journal                     |  jour        | 
@@ -137,18 +139,20 @@ Use the following naming scheme: jour-vol-issue.zip
   +-----------------------------+--------------+ 
 
 
-- **vol** is journal volume
-- **issue** identifies a specific journal issue
+- **vol** is journal volume (2 digit number)
+- **issue** identifies a specific journal issue (2 digit number for Aging and Oncotarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer)
 
 | For example:
 |
-| aging-10-01.zip
-| oncotarget-09-12.zip
-| oncoscience-05-01-02.zip
+| aging-10-01.zip          | (volume 10 issue 1)
+| oncotarget-09-12.zip     | (volume 9 issue 12)
+| oncoscience-05-01-02.zip | (volume 5 and issue 1-2)
+| ganc-12-09-10.zip        | (volume 9 and issue 9-10)
 
 .. IMPORTANT::
   
-  Please use hyphens (-) to separate parts file name. Other charcter (such as underscores, dots, etc) are not allowed.
+  Please use hyphens (-) to separate parts file name. Other charcters (such as underscores, dashes, etc) are not allowed.
+
 
 
 Package files target location
@@ -156,7 +160,7 @@ Package files target location
 
 .. IMPORTANT::
     
-    Package files target location here **DIFFERS** from "Initial package upload" scenario.
+    Package files target location here **DIFFERS** from :ref:`"Initial package upload"<initial_upload>` scenario.
 
 
 Issue package file should be uploaded to corresponding SFTP folder.
@@ -164,19 +168,19 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
+/mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
 OR |br|
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
+/mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
 
 - **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
 
-- **jour-vol-issue** is Journal name (see table above) followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
+- **jour-vol-issue** is alphanumeric identifier for a journal (:ref:`see table above<jour2>`) followed by journal volume (2 digit number) and specific issue (2 digit number for Aging and Onctarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer) (e.g. aging-10-01, oncotarget-05-06, ganc-09-01-02, oncoscience-10-11-12 etc)
 
 - **storage-date** is the date when file was uploaded to the server |br|
 OR |br|
-- **storage-date-iteration** is used when corrections are uploaded same date as initial package. In this case add "iteration" number to the date 
+- **storage-date-iteration** is the date when file was uploaded to the server. It is used when corrections are uploaded same date as initial package. In this case **iteration** number should be added to the date.
 
 Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]
 
@@ -189,31 +193,30 @@ Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[itera
 - iteration number is one digit number (i.e. 1, 2, 3 etc)
 
 
-
 Example 1 (different upload dates):
 
 We have corrected package file named aging-10-01.zip for Aging Journal volume 10 and issue 1. We need to place it on the server on the 3'd of February, 2018. At the same time initial upload has been done on the 30'th of January, 2018.
 
 In this case, full path to the file will be: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.zip
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180203/aging-10-01.zip
 
 As a result we will have 2 files on the server - initial and corrected: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.zip
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180130/aging-10-01.zip |br|
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180203/aging-10-01.zip
 
 |br|
 
 Example 2 (same upload date):
 
-We have corrected package file named aging-10-01.zip for Aging Journal volume 10 and issue 1. We need to place it ont the server on the same date when initial upload has been done - 30'th of January, 2018.
+We have corrected package file named ganc-05-01-02.zip for Genes and Cancer Journal volume 5 and issue 1-2. We need to place it ont the server on the same date when initial upload has been done - 30'th of January, 2018.
 
 In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.zip
 
 
 As a result we will have 2 files on the server - initial and corrected: |br| 
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130/ganc-05-01-02.zip |br|
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.zip
 
 
 .. _revision_upload:
@@ -224,7 +227,8 @@ Revision package upload (incremental upload when article is already on PMC)
 If there is a need to make corrections to article file(s) after issue package has passed evaluation stage of PMC, then those corrections should be uploaded to PMC as a revision package.
 
 
-This should be done in accordance with PMC requirenments: Please resubmit only the files that have been modified, along with their corresponding XML files. Do NOT change the file names of the resupplied files, only change the package name to indicate a revision (see below)
+This should be done in accordance with PMC requirenments: |br|
+"Please resubmit only the files that have been modified, along with their corresponding XML files. Do NOT change the file names of the resupplied files, only change the package name to indicate a revision" (see naming info below).
 
 
 Naming of issue pakage file
@@ -232,14 +236,16 @@ Naming of issue pakage file
 
 .. IMPORTANT::
     
-    Naming of issue package here *DIFFERS* from "Initial package upload" scenario.
+    Naming of issue package here **DIFFERS** from :ref:`"Initial package upload"<initial_upload>` scenario.
 
 
 Issue package files should be named in accordance with PMC guidelines.
 
-Use the following naming scheme: jour-vol-issue.r#.zip
+Use the following naming scheme: **jour-vol-issue.zip**
 
-- **jour** is an alphanumeric identifier such as a journal abbreviation.
+- **jour** is an alphanumeric identifier for a journal. See all possible combinations below:
+
+.. _jour3:
 
   +-----------------------------+--------------+ 
   | Journal                     |  jour        | 
@@ -254,8 +260,8 @@ Use the following naming scheme: jour-vol-issue.r#.zip
   +-----------------------------+--------------+ 
 
 
-- **vol** is journal volume
-- **issue** identifies a specific journal issue
+- **vol** is journal volume (2 digit number)
+- **issue** identifies a specific journal issue (2 digit number for Aging and Oncotarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer)
 - **r#** is a revision number (e.g. r1, r2, r3)
 
 
@@ -269,8 +275,8 @@ For example:
 
 
 .. IMPORTANT::
-  
-  Please use hyphens (-) to separate parts file name. Other charcter (such as underscores, dots, etc) are not allowed.
+
+  Please use hyphens (-) to separate parts file name. Other charcters (such as underscores, dashes, etc) are not allowed.
 
 
 Package files target location
@@ -278,7 +284,7 @@ Package files target location
 
 .. IMPORTANT::
     
-    Package files target location here *DIFFERS* from "Initial package upload" scenario.
+    Package files target location here is the same as in :ref:`Corrected package upload<corrections_upload>`scenario.
 
 
 Issue package file should be uploaded to corresponding SFTP folder.
@@ -286,19 +292,19 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
+/mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
 OR |br|
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
+/mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
 
 - **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
 
-- **jour-vol-issue** is Journal name (see table above) followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
+- **jour-vol-issue** is alphanumeric identifier for a journal (:ref:`see table above<jour3>`) followed by journal volume (2 digit number) and specific issue (2 digit number for Aging and Onctarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer) (e.g. aging-10-01, oncotarget-05-06, ganc-09-01-02, oncoscience-10-11-12 etc)
 
 - **storage-date** is the date when file was uploaded to the server |br|
 OR |br|
-- **storage-date-iteration** is used when corrections are uploaded same date as initial package. In this case add "iteration" number to the date 
+- **storage-date-iteration** is the date when file was uploaded to the server. It is used when corrections are uploaded same date as initial package. In this case **iteration** number should be added to the date.
 
 Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]
 
@@ -316,27 +322,25 @@ Example 1 (different upload dates):
 
 We have a revision file named aging-10-01.r1.zip for Aging Journal volume 10 and issue 1. We need to place it on the server on the 3'd of February, 2018. At the same time initial upload has been done on the 30'th of January, 2018.
 
-In this case, full path to the file will be: |br| 
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.zip
+In this case, full path to the file will be: |br|
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180203/aging-10-01.r1.zip
 
 As a result we will have 2 files on the server - initial and corrected: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180203/aging-10-01.r1.zip
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180130/aging-10-01.zip |br|
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180203/aging-10-01.r1.zip
 
-
+|br|
 
 Example 2 (same upload date):
 
-We have a revision file named aging-10-01.r1.zip for Aging Journal volume 10 and issue 1. We need to place it on the server on the same date when initial upload has been done - 30'th of January, 2018.
+We have a revision file named ganc-05-01-02.r1.zip for Genes and Cancer Journal volume 5 and issue 1-2. We need to place it on the server on the same date when initial upload has been done - 30'th of January, 2018.
 
 In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
-
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.r1.zip
 
 As a result we will have 2 files on the server - initial and corrected: |br| 
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.r1.zip
-
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130/ganc-05-01-02.zip |br|
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.r1.zip
 
 
 .. |br| raw:: html

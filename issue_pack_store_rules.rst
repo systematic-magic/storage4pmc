@@ -30,6 +30,8 @@ Use the following naming scheme: **jour-vol-issue.zip**
 
 - **jour** is an alphanumeric identifier for a journal. See all possible combinations below:
 
+.. _jour:
+
   +-----------------------------+--------------+ 
   | Journal                     |  jour        | 
   +=============================+==============+ 
@@ -44,13 +46,14 @@ Use the following naming scheme: **jour-vol-issue.zip**
 
 
 - **vol** is journal volume (2 digit number)
-- **issue** identifies a specific journal issue (2 digit number)
+- **issue** identifies a specific journal issue (2 digit number for Aging and Oncotarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer)
 
 | For example:
 |
 | aging-10-01.zip
 | oncotarget-09-12.zip
-| oncoscience-05-01-02.zip
+| oncoscience-05-01-02.zip (here we have volume 5 and issue 1-2)
+| ganc-12-09-10.zip (here we have volume 9 and issue 9-10)
 
 .. IMPORTANT::
 	
@@ -65,13 +68,13 @@ Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
-/mnt/archive_mount/pmcarchive/in_house/[Journal]/[v#]/[jour-vol-issue]/[storage-date]
+/mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".
 
 - **v#** stands for letter "v" and volume number (e.g. v8, v9, v2 etc)
 
-- **jour-vol-issue** is Journal name (see table above) followed by 2 digit volume number and 2 digit issue number (e.g. aging-10-01, aging-05-06, aging-09-02 etc)
+- **jour-vol-issue** is alphanumeric identifier for a journal (:ref:`see table above<jour>`) followed by journal volume (2 digit number) and specific issue (2 digit number for Aging and Onctarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer) (e.g. aging-10-01, oncotarget-05-06, ganc-09-01-02, oncoscience-10-11-12 etc)
 
 - **storage-date** is the date when file was uploaded to the server. 
 
@@ -84,12 +87,20 @@ Use the following naming convention for storge date: YYYYMMDD
 - DD is two-digit day (e.g. 01, 20, 25, 31 etc)
 
 
-Example:
+Example 1 (Aging and Oncotarget):
 
 We have a file named aging-10-01.zip for Aging Journal, volume 10 and issue 1. We need to place it on the server on the 30'th of January 2018.
 
 In this case, full path to the file will be: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
+
+
+Example 2 (Oncoscience and Genes and Cancer):
+
+We have a file named ganc-5-01-02.zip for Genes and Cancer Journal, volume 5 and issue 1-2. We need to place it on the server on the 30'th of January 2018.
+
+In this case, full path to the file will be: |br|
+/mnt/archive_mount/pmcarchive/in_house/Aging/v10/ganc-5-01-02/20180130/ganc-5-01-02.zip
 
 
 .. _corrections_upload:

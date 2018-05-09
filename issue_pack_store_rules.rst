@@ -325,7 +325,6 @@ In this case, full path to the file will be: |br|
 As a result we will have 2 files on the server - initial and corrected: |br|
 /mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180130/aging-10-01.zip |br|
 /mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180203/aging-10-01.r1.zip
-
 |br|
 
 Example 2 (same upload date):

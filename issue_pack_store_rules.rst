@@ -66,8 +66,7 @@ Package files target location
 
 Issue package file should be uploaded to corresponding SFTP folder.
 
-Use the following location to store issue packages:
-
+Use the following location to store issue packages: |br|
 /mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date]
 
 - **Journal** - possible values: "Aging", "Oncotarget", "Oncoscience", "Genes&Cancer".

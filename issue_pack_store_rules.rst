@@ -16,19 +16,19 @@ For simplicity we structured these rules around 3 possible scenarios:
 .. _initial_upload:
 
 Initial package upload
-======================
+----------------------
 
-Initial package upload happens when issue package file is being uploaded to SFTP server for the first time. For all subsequet uploads please check "Corrected package upload" or "Revision package upload".
+Initial package upload happens when issue package file is being uploaded to SFTP server for the first time. For all subsequet uploads please check :ref:`Corrected package upload<corrections_upload>` or :ref:`Revision package upload<revision_upload>`.
 
 
 Naming of issue pakage file
----------------------------
++++++++++++++++++++++++++++
 
 Issue package files should be named in accordance with PMC guidelines.
 
-Use the following naming scheme: jour-vol-issue.zip
+Use the following naming scheme: **jour-vol-issue.zip**
 
-- **jour** is an alphanumeric identifier such as a journal abbreviation.
+- **jour** is an alphanumeric identifier for a journal. See all possible combinations below:
 
   +-----------------------------+--------------+ 
   | Journal                     |  jour        | 
@@ -43,8 +43,8 @@ Use the following naming scheme: jour-vol-issue.zip
   +-----------------------------+--------------+ 
 
 
-- **vol** is journal volume
-- **issue** identifies a specific journal issue
+- **vol** is journal volume (2 digit number)
+- **issue** identifies a specific journal issue (2 digit number)
 
 | For example:
 |
@@ -54,14 +54,14 @@ Use the following naming scheme: jour-vol-issue.zip
 
 .. IMPORTANT::
 	
-  Please use hyphens (-) to separate parts file name. Other charcter (such as underscores, dots, etc) are not allowed.
+  Please use hyphens (-) to separate parts file name. Other charcters (such as underscores, dashes, etc) are not allowed.
 
 
 
 Package files target location
------------------------------
-Issue package file should be uploaded to corresponding SFTP folder.
++++++++++++++++++++++++++++++
 
+Issue package file should be uploaded to corresponding SFTP folder.
 
 Use the following location to store issue packages:
 
@@ -95,13 +95,13 @@ In this case, full path to the file will be: |br|
 .. _corrections_upload:
 
 Corrected package upload (after validation)
-===========================================
+-------------------------------------------
 
 After initial upload (see above), issue package is validated against set of criteria to make sure that quality of package meets PMC standards. If there are issues, vendors re-package corrected files and upload full issue package to SFTP again. 
 
 
 Naming of issue pakage file
----------------------------
++++++++++++++++++++++++++++
 
 .. Note::
     
@@ -142,7 +142,7 @@ Use the following naming scheme: jour-vol-issue.zip
 
 
 Package files target location
------------------------------
++++++++++++++++++++++++++++++
 
 .. IMPORTANT::
     
@@ -209,7 +209,7 @@ As a result we will have 2 files on the server - initial and corrected: |br|
 .. _revision_upload:
 
 Revision package upload (incremental upload when article is already on PMC)
-===========================================================================
+---------------------------------------------------------------------------
 
 If there is a need to make corrections to article file(s) after issue package has passed evaluation stage of PMC, then those corrections should be uploaded to PMC as a revision package.
 
@@ -218,7 +218,7 @@ This should be done in accordance with PMC requirenments: Please resubmit only t
 
 
 Naming of issue pakage file
----------------------------
++++++++++++++++++++++++++++
 
 .. IMPORTANT::
     
@@ -264,7 +264,7 @@ For example:
 
 
 Package files target location
------------------------------
++++++++++++++++++++++++++++++
 
 .. IMPORTANT::
     

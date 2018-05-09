@@ -282,7 +282,7 @@ Package files target location
 
 .. IMPORTANT::
     
-    Package files target location here is the same as in :ref:`Corrected package upload<corrections_upload>`scenario.
+    Package files target location here is the same as in :ref:`"Corrected package upload"<corrections_upload>` scenario.
 
 
 Issue package file should be uploaded to corresponding SFTP folder. |br|
@@ -332,12 +332,12 @@ Example 2 (same upload date):
 
 We have a revision file named ganc-05-01-02.r1.zip for Genes and Cancer Journal volume 5 and issue 1-2. We need to place it on the server on the same date when initial upload has been done - 30'th of January, 2018.
 
-In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there: |br|
-/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.r1.zip
+In such case we create a folder with the same date **AND** iteration number - 20180130-1 - and place the file there: |br|
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v5/ganc-05-01-02/20180130-1/ganc-05-01-02.r1.zip
 
 As a result we will have 2 files on the server - initial and corrected: |br| 
-/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130/ganc-05-01-02.zip |br|
-/mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.r1.zip
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v5/ganc-05-01-02/20180130/ganc-05-01-02.zip |br|
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v5/ganc-05-01-02/20180130-1/ganc-05-01-02.r1.zip
 
 
 .. |br| raw:: html

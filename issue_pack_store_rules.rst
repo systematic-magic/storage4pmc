@@ -166,8 +166,7 @@ Package files target location
 Issue package file should be uploaded to corresponding SFTP folder.
 
 
-Use the following location to store issue packages:
-
+Use the following location to store issue packages: |br|
 /mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
 OR |br|
 /mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
@@ -178,11 +177,12 @@ OR |br|
 
 - **jour-vol-issue** is alphanumeric identifier for a journal (:ref:`see table above<jour2>`) followed by journal volume (2 digit number) and specific issue (2 digit number for Aging and Onctarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer) (e.g. aging-10-01, oncotarget-05-06, ganc-09-01-02, oncoscience-10-11-12 etc)
 
-- **storage-date** is the date when file was uploaded to the server |br|
-OR |br|
+- **storage-date** is the date when file was uploaded to the server
+OR
+
 - **storage-date-iteration** is the date when file was uploaded to the server. It is used when corrections are uploaded same date as initial package. In this case **iteration** number should be added to the date.
 
-Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]
+Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration]
 
 - YYYY is full year (e.g. 2018, 2019 etc)
 
@@ -190,7 +190,7 @@ Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[itera
 
 - DD is two-digit day (e.g. 01, 20, 25, 31 etc)
 
-- iteration number is one digit number (i.e. 1, 2, 3 etc)
+- iteration is one digit number (i.e. 1, 2, 3 etc)
 
 
 Example 1 (different upload dates):
@@ -203,14 +203,13 @@ In this case, full path to the file will be: |br|
 As a result we will have 2 files on the server - initial and corrected: |br|
 /mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180130/aging-10-01.zip |br|
 /mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180203/aging-10-01.zip
-
 |br|
 
 Example 2 (same upload date):
 
 We have corrected package file named ganc-05-01-02.zip for Genes and Cancer Journal volume 5 and issue 1-2. We need to place it ont the server on the same date when initial upload has been done - 30'th of January, 2018.
 
-In such case we create a folder with the same date *AND* iteration number - 20180130-1 - and place the file there: |br|
+In such case we create a folder with the same date **AND** iteration number - 20180130-1 - and place the file there: |br|
 /mnt/archive_mount/pmcarchive/Genes&Cancer/v05/ganc-05-01-02/20180130-1/ganc-05-01-02.zip
 
 

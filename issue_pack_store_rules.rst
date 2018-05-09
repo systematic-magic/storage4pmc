@@ -57,7 +57,7 @@ Use the following naming scheme: **jour-vol-issue.zip**
 
 .. IMPORTANT::
 	
-  Please use hyphens (-) to separate parts file name. Other charcters (such as underscores, dashes, etc) are not allowed.
+  Please use hyphens (-) to separate parts of file name. Other charcters (such as underscores, dashes, etc) are not allowed.
 
 
 
@@ -151,7 +151,7 @@ Use the following naming scheme: **jour-vol-issue.zip**
 
 .. IMPORTANT::
   
-  Please use hyphens (-) to separate parts file name. Other charcters (such as underscores, dashes, etc) are not allowed.
+  Please use hyphens (-) to separate parts of file name. Other charcters (such as underscores, dashes, etc) are not allowed.
 
 
 
@@ -276,7 +276,7 @@ For example:
 
 .. IMPORTANT::
 
-  Please use hyphens (-) to separate parts file name. Other charcters (such as underscores, dashes, etc) are not allowed.
+  Please use hyphens (-) to separate parts of file name. Other charcters (such as underscores, dashes, etc) are not allowed.
 
 
 Package files target location

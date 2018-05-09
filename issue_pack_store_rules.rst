@@ -50,10 +50,10 @@ Use the following naming scheme: **jour-vol-issue.zip**
 
 | For example:
 |
-| aging-10-01.zip            (volume 10 issue 1)
-| oncotarget-09-12.zip       (volume 9 issue 12)
+| aging-10-01.zip         (volume 10 issue 1)
+| oncotarget-09-12.zip      (volume 9 issue 12)
 | oncoscience-05-01-02.zip   (volume 5 and issue 1-2)
-| ganc-12-09-10.zip          (volume 9 and issue 9-10)
+| ganc-12-09-10.zip        (volume 9 and issue 9-10)
 
 .. IMPORTANT::
 	
@@ -145,9 +145,9 @@ Use the following naming scheme: **jour-vol-issue.zip**
 | For example:
 |
 | aging-10-01.zip         (volume 10 issue 1)
-| oncotarget-09-12.zip    (volume 9 issue 12)
+| oncotarget-09-12.zip      (volume 9 issue 12)
 | oncoscience-05-01-02.zip   (volume 5 and issue 1-2)
-| ganc-12-09-10.zip          (volume 9 and issue 9-10)
+| ganc-12-09-10.zip        (volume 9 and issue 9-10)
 
 .. IMPORTANT::
   

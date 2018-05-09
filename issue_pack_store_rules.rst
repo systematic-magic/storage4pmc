@@ -91,7 +91,7 @@ Example 1 (Aging and Oncotarget):
 We have a file named aging-10-01.zip for Aging Journal, volume 10 and issue 1. We need to place it on the server on the 30'th of January 2018.
 
 In this case, full path to the file will be: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
+/mnt/archive_mount/pmcarchive/Aging/v10/aging-10-01/20180130/aging-10-01.zip
 
 
 Example 2 (Oncoscience and Genes and Cancer):
@@ -99,7 +99,7 @@ Example 2 (Oncoscience and Genes and Cancer):
 We have a file named ganc-5-01-02.zip for Genes and Cancer Journal, volume 5 and issue 1-2. We need to place it on the server on the 30'th of January 2018.
 
 In this case, full path to the file will be: |br|
-/mnt/archive_mount/pmcarchive/in_house/Aging/v10/ganc-5-01-02/20180130/ganc-5-01-02.zip
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v5/ganc-5-01-02/20180130/ganc-5-01-02.zip
 
 
 .. _corrections_upload:

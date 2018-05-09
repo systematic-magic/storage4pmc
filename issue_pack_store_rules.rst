@@ -96,10 +96,10 @@ In this case, full path to the file will be: |br|
 
 Example 2 (Oncoscience and Genes and Cancer):
 
-We have a file named ganc-5-01-02.zip for Genes and Cancer Journal, volume 5 and issue 1-2. We need to place it on the server on the 30'th of January 2018.
+We have a file named ganc-05-01-02.zip for Genes and Cancer Journal, volume 5 and issue 1-2. We need to place it on the server on the 30'th of January 2018.
 
 In this case, full path to the file will be: |br|
-/mnt/archive_mount/pmcarchive/Genes&Cancer/v5/ganc-5-01-02/20180130/ganc-5-01-02.zip
+/mnt/archive_mount/pmcarchive/Genes&Cancer/v5/ganc-05-01-02/20180130/ganc-05-01-02.zip
 
 
 .. _corrections_upload:
@@ -107,7 +107,7 @@ In this case, full path to the file will be: |br|
 Corrected package upload (after validation)
 -------------------------------------------
 
-After initial upload (see above), issue package is validated against set of criteria to make sure that quality of package meets PMC standards. If there are issues, vendors re-package corrected files and upload full issue package to SFTP again. 
+After initial upload (:ref:`see above<initial_upload>`), issue package is validated against set of criteria to make sure that quality of package meets PMC standards. If there are issues, vendors re-package corrected files and upload full issue package to SFTP again. 
 
 
 Naming of issue pakage file
@@ -115,7 +115,7 @@ Naming of issue pakage file
 
 .. Note::
     
-    Naming of issue package here is the same as for "Initial package upload" scenario.
+    Naming of issue package here is the same as for :ref:`"Initial package upload"<initial_upload>` scenario.
 
 
 Issue package files should be named in accordance with PMC guidelines.

@@ -163,10 +163,9 @@ Package files target location
     Package files target location here **DIFFERS** from :ref:`"Initial package upload"<initial_upload>` scenario.
 
 
-Issue package file should be uploaded to corresponding SFTP folder.
+Issue package file should be uploaded to corresponding SFTP folder. |br|
+Use the following location to store issue packages:
 
-
-Use the following location to store issue packages: |br|
 /mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
 OR |br|
 /mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date-iteration]
@@ -266,11 +265,11 @@ Use the following naming scheme: **jour-vol-issue.zip**
 
 For example:
 
-- You send the original files for "Aging" volume 10, issue 1 in a zip file named:  *aging-15-01.zip*
+- You send the original files for "Aging" volume 10, issue 1 in a zip file named:  **aging-15-01.zip**
 
-- Three days later, you send a revised XML file for one article, in a zip file named: *aging-15-01.r1.zip*
+- Three days later, you send a revised XML file for one article, in a zip file named: **aging-15-01.r1.zip**
 
-- Later that same day, you send replacement files for the same issue, in a zip file named: *aging-15-01.r2.zip*
+- Later that same day, you send replacement files for the same issue, in a zip file named: **aging-15-01.r2.zip**
 
 
 .. IMPORTANT::
@@ -286,9 +285,7 @@ Package files target location
     Package files target location here is the same as in :ref:`Corrected package upload<corrections_upload>`scenario.
 
 
-Issue package file should be uploaded to corresponding SFTP folder.
-
-
+Issue package file should be uploaded to corresponding SFTP folder. |br|
 Use the following location to store issue packages:
 
 /mnt/archive_mount/pmcarchive/[Journal]/[v#]/[jour-vol-issue]/[storage-date] |br|
@@ -301,8 +298,9 @@ OR |br|
 
 - **jour-vol-issue** is alphanumeric identifier for a journal (:ref:`see table above<jour3>`) followed by journal volume (2 digit number) and specific issue (2 digit number for Aging and Onctarget; 2 sets of 2 digit numbers separated by hypen for Oncoscience and Genes and Cancer) (e.g. aging-10-01, oncotarget-05-06, ganc-09-01-02, oncoscience-10-11-12 etc)
 
-- **storage-date** is the date when file was uploaded to the server |br|
-OR |br|
+- **storage-date** is the date when file was uploaded to the server
+OR
+
 - **storage-date-iteration** is the date when file was uploaded to the server. It is used when corrections are uploaded same date as initial package. In this case **iteration** number should be added to the date.
 
 Use the following naming convention for storge date: YYYYMMDD or YYYYMMDD-[iteration number]

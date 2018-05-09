@@ -1,18 +1,19 @@
 Storage rules: issue package files
 ==================================
 
-Issue package file is an archive file which contains all contents of articles belonging to single issue. Article contents include article XML, PDF of aticle, figures and graphics optional, as well as supplementary materials.
+Issue package file is an archive file which contains all contents of articles belonging to single issue. Article contents include article XML, PDF of aticle, figures and graphics, as well as supplementary materials.
 
-This document convers issue package storage rules and is applicable to Aging, Oncotarget, Oncoscience and Genes and Cancer journals.
+This document covers issue package storage rules and is applicable to Aging, Oncotarget, Oncoscience and Genes and Cancer journals.
 
 
 For simplicity we structured these rules around 3 possible scenarios:
 
-- Initial package upload
-- Corrected package upload (after validation)
-- Revision package upload (incremental upload when article is already on PMC)
+- :ref:`Initial package upload<initial_upload>`
+- :ref:`Corrected package upload (after validation)<corrections_upload>`
+- :ref:`Revision package upload (incremental upload when article is already on PMC)<revision_upload>`
 
 
+.. _initial_upload:
 
 Initial package upload
 ======================
@@ -91,7 +92,7 @@ In this case, full path to the file will be: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130/aging-10-01.zip
 
 
-
+.. _corrections_upload:
 
 Corrected package upload (after validation)
 ===========================================
@@ -205,6 +206,7 @@ As a result we will have 2 files on the server - initial and corrected: |br|
 /mnt/archive_mount/pmcarchive/in_house/Aging/v10/aging-10-1/20180130-1/aging-10-01.zip
 
 
+.. _revision_upload:
 
 Revision package upload (incremental upload when article is already on PMC)
 ===========================================================================
